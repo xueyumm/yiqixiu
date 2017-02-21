@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>易企秀模板</title>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/cube.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/iconfont.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+<div class="music muc_mp3">
+    <span id='mp3' class="iconfont icon-yinfu"></span>
+    <audio src="music/cf3.mp3" autoplay="autoplay" loop="loop" controls="controls" preload id="music" hidden></audio>
+    <!-- <div id="mp3"></div> -->
+</div>
+<div class="container">
+    <div class="box box1 one">
+        <div class="page1">
+            <div class="item1">
+                <div class="animated zoomIn item1-1"><img src="images/page1.png"></div>
+                <div class="animated fadeInDownBig item1-2"><img src="images/kaizhang.png"></div>
+                <span class="animated lightSpeedIn item1-3">这个八月有点不同</span>
+                <div class="animated bounceInRight item1-4"><img src="images/page5.png"></div>
+                <div class="animated bounceInRight item1-5"><img src="images/page2.png"></div>
+            </div>
+            <div class="item1_22">
+                <div class="animated fadeInDownBig item1-6"><img src="images/cai5.png"></div>
+                <div class="animated fadeInDownBig item1-7"><img src="images/cai2.png"></div>
+                <div class="animated fadeInDownBig item1-8"><img src="images/cai1.png"></div>
+                <div class="animated fadeInDownBig item1-9"><img src="images/cai3.png"></div>
+            </div>
+        </div>
+    </div>
+    <div class="box box2">
+        <div class="page2">
+            <div class="item2">
+                <div class="animated pulse item2-1"><img src="images/page1.png"></div>
+                <div class="animated bounceInLeft item2-2"><img src="images/page5.png"></div>
+                <div class="animated bounceInLeft item2-3"><img src="images/page6.png"></div>
+                <span class="animated lightSpeedIn item2-4">折后消费满<b> 180 </b>元<br>美食共享,每桌赠送<br> <b>特定菜品</b> 一份</span>
+                <p class="animated fadeInLeftBig item2-5">
+                    <img class="tiezhi1" src="images/tiezhi.png" height="33" width="41">
+                    <img class="tiezhi2" src="images/tiezhi.png" height="33" width="41">
+                    <span class="meat">济州黑猪肉<b>￥88</b></span>
+                </p>
+                <div class="animated bounceInLeft item2-6"><img src="images/page3.png"></div>
+                <div class="animated bounceInLeft item2-7"><img src="images/dingzi.png"></div>
+                <div class="animated bounceInLeft item2-8"><img src="images/page7.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="box box3">
+        <div class="page3">
+            <div class="item3">
+            <div class="animated pulse item3-1"><img src="images/page1.png"></div>
+            <div class="animated bounceInLeft item3-2"><img src="images/page5.png"></div>
+            <div class="animated bounceInRight item3-3"><img src="images/page2.png"></div>
+            <span class="animated lightSpeedIn item3-4">开业钜惠<br>到店消费即可获赠，<br>每桌送一个 <b>8月1日</b> 起<br>限量300个 送完为止</span>
+            <p class="animated bounceInLeft item3-5">
+                <img class="tiezhi3" src="images/tiezhi.png" height="33" width="41">
+                    <img class="tiezhi4" src="images/tiezhi.png" height="33" width="41">
+                    <span class="fash">韩式风味烤章鱼<b>￥66</b></span>
+            </p>
+            <div class="animated bounceInLeft item3-6">
+                <img src="images/page3.png">
+                <img class="animated bounceInLeft item3-8" src="images/dingzi.png">
+                <img class="animated bounceInLeft item3-9" src="images/dingzi.png">
+            </div>
+            <div class="animated bounceInDown item3-7"><img src="images/page7.jpg"></div>
+            </div>
+        </div>
+    </div>   
+</div>
+<script src="js/jquery.touchSwipe.min.js"></script>
+    <script>
+    onload=function(){
+        // 背景音乐
+        //方法一
+        /*$('#mp3').click(function(){
+         var audio = document.getElementById('music');
+         if(audio.paused){              
+             audio.play();// 播放    
+         }
+         else{
+              audio.pause();// 暂停
+         } 
+       });
+        var i=0;
+        var time;
+        var x=function(){
+            i++;
+            document.getElementById('mp3').style.transform="rotate("+i*36+"deg)";
+            time=setTimeout(x,200);
+        }; x();*/
+
+
+var audio=document.getElementsByTagName('audio')[0];
+         $('.music').click(function(){
+        if(audio.paused){
+            audio.play();
+            $(this).attr('class','music muc_mp3')
+        }else{
+            audio.pause();
+            $(this).attr('class','music')
+        }
+    });
+
+
+
+        // 翻页
+        $(document).ready(
+        function() {
+            var nowpage=0;
+            //给最大的盒子增加事件监听
+            $(".container").swipe({
+                // swipe (事件，滑动的方向，滑动的距离，一次滑动的时间 , 几根手指)
+                swipe:function(event,direction,distance,duration,fingerCount){
+                    if(direction == "up"){
+                        nowpage = nowpage+1;    //当向上滑动手指时令当前页面记数器加1
+                    }
+                    else if(direction=="down"){
+                        nowpage=nowpage-1;  //当向下滑动手指时令当前页面记数器减1
+                    }
+                    if(nowpage == 3){}
+                    if(nowpage>2){nowpage=0;}
+                    if(nowpage<0){nowpage=0;}
+                    $(".container").animate({
+                        "top":nowpage*-100+"%"
+                    },400);     //根据当前记数器滚动到相应的高度
+                     $(".box").eq(nowpage).addClass("one").siblings().removeClass("one");
+                    }
+                });
+        }
+    );
+}
+    </script>
+</body>
+</html>

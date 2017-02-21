@@ -1,0 +1,486 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    position: relative;
+}
+.container {
+        width: 100%; 
+        height: 100%; 
+        position: absolute; 
+        left: 0; 
+        top: 0%; 
+}
+.box{
+    /*width: 100%;*/
+    height: 100%;
+    position: relative; 
+    background: url(../images/page.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+/*第一个页面*/
+/*方法一*/
+#mp3{
+    width: 32px;
+    height: 32px;
+    border: 2px solid #fff;
+    border-radius: 32px;
+    background: orange;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    position: absolute;
+    z-index:9999;
+    top: -2px;
+    right:-2px;
+}
+.music{
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    border:1px solid #fff; 
+    color: #fff;
+    /*background:url('http://as.eqh5.com/h5_view/images/normalmusic.svg') center center/100% 100%;*/
+    position: fixed;
+    top:25px;
+    right: 25px;
+    z-index: 10;
+}
+.muc_mp3{
+    animation: stom 3s linear infinite;
+    -moz-animation: stom 3s linear infinite; 
+    -webkit-animation: stom 3s linear infinite; 
+    -o-animation: stom 3s linear infinite;
+}
+@keyframes stom{
+    0%{
+        transform:rotate(0deg);      
+    }
+    20%{
+        transform:rotate(72deg);
+    }
+    40%{
+        transform:rotate(144deg);
+    }
+    60%{
+        transform:rotate(216deg);
+    }
+    80%{
+        transform:rotate(288deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+.page1{
+    width: 100%;
+    position: absolute;
+    top: 105px;
+}
+.page1 .item1{
+    width: 310px;
+    height: 310px;
+    margin: 0 auto;
+    position: relative;
+}
+.item1-1{
+    width: 310px;
+    height: 310px;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:0.1s;
+            animation-delay:0.1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.item1-2{ 
+    position: absolute;
+    z-index: 2;
+    top: 53px;
+    left: 50px;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:0.3s;
+            animation-delay:0.3s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.item1-3{
+    position: absolute;
+    z-index: 2;
+    top: 143px;
+    left: 70px;
+    font-size: 18px;
+    color: #fff;
+}
+.item1-4{
+    position: absolute;
+    z-index: 2;
+    top:190px;
+    right: 18px;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-delay:2.5s;
+            animation-delay:2.5s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.item1-5{
+    position: absolute;
+    z-index: 2;
+    top: 216px;
+    right: 53px;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-delay:2.5s;
+            animation-delay:2.5s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.page1 .item1_22{
+    width:266px;
+    height: 90px;
+    margin: 0 auto;
+    position:relative;  
+}
+.item1-6{
+    position: absolute;
+    z-index: 2;
+    bottom: 27px;
+    z-index: 1;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:1s;
+            animation-delay:1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.item1-7{
+    position: absolute;
+    left: 56px;
+    bottom: 20px;
+    z-index: 3;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:1.4s;
+            animation-delay:1.4s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.item1-8{
+    position: absolute;
+    left: 125px;
+    bottom: 40px;
+    z-index: 2;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:1.8s;
+            animation-delay:1.8s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.item1-9{
+    position: absolute;
+    bottom: 0px;
+    left: 35px;
+    z-index: 4;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:1.4s;
+            animation-delay:1.4s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+/*第二个页面*/
+.page2{
+    width: 100%;
+    height: 360px;
+    position: absolute;
+    top: 22%;
+}
+.page2 .item2{
+    width: 310px;
+    height: 310px;
+    margin: 0 auto;
+    position: relative;
+}
+.item2-1{
+   -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:0.4s;
+            animation-delay:0.4s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; 
+}
+.item2-2{
+    position: absolute;
+    z-index: 2;
+    top:20px;
+    left: 5px;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:0.8s;
+            animation-delay:0.8s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; 
+}
+.item2-3{
+    position: absolute;
+    z-index: 2;
+    top:43px;
+    left: 34px;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:0.8s;
+            animation-delay:0.8s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; 
+}
+.item2-4{
+    position: absolute;
+    z-index: 2;
+    top: 40px;
+    right: 47px;
+    color: #fff;
+    font-size: 16px;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:1s;
+            animation-delay:1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; 
+}
+.item2-4 b{
+    font-size: 20px;
+    color: rgb(253, 255, 121);
+}
+.item2-5{
+    width: 92px;
+    height: 65px;
+    background: #fff;
+    position: absolute;
+    z-index: 4;
+    top: 152px;
+    left: 52px;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:1.4s;
+            animation-delay:1.4s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.item2-5 .tiezhi1{
+    position: absolute;
+    top: -14px;
+    left: 75px;
+}
+.item2-5 .tiezhi2{
+    position: absolute;
+    top: 47px;
+    left: -17px;
+}
+.item2-5 .meat{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    font-size: 18px;
+}
+.item2-5 .meat b{
+    font-size: 20px;
+    color: red;
+}
+.item2-6{
+    position: absolute;
+    z-index: 3;
+    top: 162px;
+    right: 16px;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:1.8s;
+            animation-delay:1.8s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.item2-7{
+    position: absolute;
+    z-index: 3;
+    top: 153px;
+    right: 85px;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:1.8s;
+            animation-delay:1.8s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.item2-8{
+    width: 134px;
+    height: 121px;
+    position: absolute;
+    z-index: 2;
+    top: 174px;
+    right: 31px;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:1.8s;
+            animation-delay:1.8s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+/*第三个页面*/
+.page3{
+    width: 100%;
+    height: 360px;
+    position: absolute;
+    top: 25%;
+}
+.page3 .item3{
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    position: relative;
+}
+.item3-1{
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:0.4s;
+            animation-delay:0.4s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.item3-1 img{
+    position: relative;
+    left: -23px;
+    transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+}
+.item3-2{
+    position: absolute;
+    top: -23px;
+    right: 20px;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:0.8s;
+            animation-delay:0.8s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.item3-3{
+    position: absolute;
+    top: 4px;
+    right: 54px;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:0.8s;
+            animation-delay:0.8s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.item3-4{
+    position: absolute;
+    top: 45px;
+    left: 74px;
+    font-size: 14px;
+    color: #fff;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:1.2s;
+            animation-delay:1.2;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.item3-4 b{
+    color: rgb(253, 255, 121);
+    font-size: 22px;
+}
+.item3-5{
+    width: 65px;
+    height: 92px;
+    background: #fff;
+    position: absolute;
+    top: 178px;
+    left: 77px;
+    font-size: 16px;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:1.6s;
+            animation-delay:1.6;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.item3-5 .tiezhi3{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+.item3-5 .tiezhi4{
+    position: absolute;
+    top: 75px;
+    right: 42px;
+}
+.item3-5 .fash{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+}
+.item3-5 .fash b{
+    color:red;
+    font-size: 20px;
+}
+.item3-6{
+    position: absolute;
+    z-index: 5;
+    top: 200px;
+    right: 17px;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:2s;
+            animation-delay:1.6;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.item3-7{
+    width: 134px;
+    height: 121px;
+    position: absolute;
+    z-index: 2;
+    top: 209px;
+    right: 33px;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:2s;
+            animation-delay:2s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.item3-8{
+    position: absolute;
+    z-index: 5;
+    top: -9px;
+    right: 106px;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:2s;
+            animation-delay:2s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+.item3-9{
+    position: absolute;
+    z-index: 5;
+    top: -9px;
+    right: 35px;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay:2s;
+            animation-delay:2s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
